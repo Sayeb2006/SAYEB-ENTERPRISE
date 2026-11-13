@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Admin Demo | SAYEB ENTERPRISE</title><link rel="stylesheet" href="/styles.css"></head>
+<body class="admin-body"><header class="topbar"><a class="brand" href="/"><span class="brand-mark">SE</span><span><b>SAYEB ENTERPRISE</b><small>ADMIN DEMO</small></span></a><a class="back-link" href="/">← Public website</a></header>
+<main class="admin-wrap"><span class="eyebrow">LOCAL BROWSER DEMO</span><h1>Enquiry dashboard</h1><div class="notice"><b>Demo only:</b> enquiries are stored in this browser only. This is not a secure, multi-user admin system. Do not store sensitive customer data here.</div>
+<div class="admin-stats"><div><small>TOTAL ENQUIRIES</small><b id="totalCount">0</b></div><div><small>STORAGE</small><b>Local device</b></div></div>
+<div class="admin-form"><h2>Add a test enquiry</h2><form id="enquiryForm"><label>Customer name<input id="customerName" required maxlength="70" placeholder="Customer name"></label><label>Service requested<input id="serviceName" required maxlength="100" placeholder="e.g. Udyam Registration"></label><label>Contact note (optional)<input id="contactNote" maxlength="100" placeholder="Non-sensitive note only"></label><button class="btn primary" type="submit">Save demo enquiry</button></form></div>
+<div class="admin-list-head"><h2>Recent enquiries</h2><button id="clearBtn" class="btn danger">Clear demo data</button></div><div id="enquiryList" class="enquiry-list"></div>
+</main><script src="/admin.js"></script></body></html>
